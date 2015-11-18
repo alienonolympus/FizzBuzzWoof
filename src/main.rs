@@ -5,7 +5,7 @@ fn analyse(input:i32) {
 }
 
 fn main() {
-    for count in 0..101 {
+    for count in 1..101 {
         let input = count.clone() as i32;
         analyse(input);
     }
