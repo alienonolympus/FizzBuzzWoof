@@ -1,6 +1,23 @@
 fn test4repeat(input:i32) -> bool {
+
     let mut printed = false;
 
+    for ch in input.to_string().chars() {
+        if ch == '3' {
+            print!("Fizz ");
+            printed = false;
+        }
+        if ch == '5' {
+            print!("Buzz ");
+            printed = false;
+        }
+        if ch == '7' {
+            print!("Woof ");
+            printed = false;
+        }
+    }
+
+    /*
     if input - input % 10 == 30 {
         print!("Fizz ");
         printed = true;
@@ -30,6 +47,7 @@ fn test4repeat(input:i32) -> bool {
         print!("Woof ");
         printed = true;
     }
+*/
 
     return printed;
 }
