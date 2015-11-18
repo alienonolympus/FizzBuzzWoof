@@ -5,49 +5,17 @@ fn test4repeat(input:i32) -> bool {
     for ch in input.to_string().chars() {
         if ch == '3' {
             print!("Fizz ");
-            printed = false;
+            printed = true;
         }
         if ch == '5' {
             print!("Buzz ");
-            printed = false;
+            printed = true;
         }
         if ch == '7' {
             print!("Woof ");
-            printed = false;
+            printed = true;
         }
     }
-
-    /*
-    if input - input % 10 == 30 {
-        print!("Fizz ");
-        printed = true;
-    }
-
-    if input % 10 == 3 {
-        print!("Fizz ");
-        printed = true;
-    }
-
-    if input - input % 10 == 50 {
-        print!("Buzz ");
-        printed = true;
-    }
-
-    if input % 10 == 5 {
-        print!("Buzz ");
-        printed = true;
-    }
-
-    if input - input % 10 == 70 {
-        print!("Woof ");
-        printed = true;
-    }
-
-    if input % 10 == 7 {
-        print!("Woof ");
-        printed = true;
-    }
-*/
 
     return printed;
 }
