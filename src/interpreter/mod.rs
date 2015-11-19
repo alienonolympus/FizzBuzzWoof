@@ -1,4 +1,5 @@
 mod process;
+mod input;
 
 fn analyse(input:i32) {
     process::analyse(input);
@@ -19,7 +20,7 @@ fn read_code() -> String {
 }
 
 pub fn driver() {
-
+    /*
     let mut userinput = read_code();
     let inputclone = userinput.clone();
     userinput.truncate(inputclone.len() - 1);
@@ -28,6 +29,13 @@ pub fn driver() {
         .unwrap_or(25);
 
     for count in 1..limit + 1 {
+        let input = count.clone() as i32;
+        analyse(input);
+    }
+*/
+    let result = input::analyse();
+
+    for count in result.start()..result.end() + 1 {
         let input = count.clone() as i32;
         analyse(input);
     }
