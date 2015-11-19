@@ -19,6 +19,7 @@ fn read_code() -> String {
 }
 
 pub fn driver() {
+
     let mut userinput = read_code();
     let inputclone = userinput.clone();
     userinput.truncate(inputclone.len() - 1);
