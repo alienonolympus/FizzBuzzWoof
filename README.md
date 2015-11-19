@@ -1,4 +1,4 @@
-# FizzBuzzWoof
+# FizzBuzzWoof [![Build Status](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof.svg)](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof)
 A Fizz Buzz Woof implementation in Rust
 
 Enter the numbers you wish to list out!
