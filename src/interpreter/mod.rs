@@ -1,10 +1,13 @@
+//Required modules
 mod process;
 mod input;
 
+//Analyse using the function in process.rs
 fn analyse(input:i32) {
     process::analyse(input);
 }
 
+//Reads the code (includes a prompt!)
 fn read_code() -> String {
     use std::io::{BufRead , Write};
     use std::io;
@@ -19,24 +22,17 @@ fn read_code() -> String {
     return input;
 }
 
+//The driver that puts everything together
 pub fn driver() {
-    /*
-    let mut userinput = read_code();
-    let inputclone = userinput.clone();
-    userinput.truncate(inputclone.len() - 1);
-    let limit = userinput
-        .parse::<i32>()
-        .unwrap_or(25);
-
-    for count in 1..limit + 1 {
-        let input = count.clone() as i32;
-        analyse(input);
-    }
-*/
+    //Gets input(s)
     let result = input::analyse();
 
+    //Loops through the list given by the struct
     for count in result.start()..result.end() + 1 {
+        //Clone as i32
         let input = count.clone() as i32;
+
+        //Do the Fizzing, Buzzing, and Barking
         analyse(input);
     }
 }
