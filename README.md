@@ -1,42 +1,32 @@
 # FizzBuzzWoof [![Build Status](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof.svg)](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof)
 A Fizz Buzz Woof implementation in Rust
 
-Enter the numbers you wish to list out!
+Now, you can directly enter the a range of numbers you want to print out.
 
 Example:
 
 ```
-$15
-1
-2
-Fizz Fizz
-4
-Buzz Buzz
-Fizz
-Woof Woof
-8
-Fizz
-Buzz
-11
-Fizz
-Fizz
-Woof
+$15 20
 Buzz Fizz Buzz
+16
+Woof
+Fizz
+19
+Buzz
+```
+Here's a way you could only print out one number easily:
+
+```
+$343 343
+Fizz Fizz Woof
 ```
 
-# Compilation
-Compile this by simply running
-```cargo build```
+# Compilation`
 
-Then, run the program using
+Just run
 ```cargo run```
-
-Of course, to save trouble, you *could* actually just do
-```cargo run```
-
-Up to you to decide!
 
 # Notes:
-Still in progress. Expect to see something cooler soon.
+Still in progress. Expect to see something cooler soon!
 
 Written in... Rust!
