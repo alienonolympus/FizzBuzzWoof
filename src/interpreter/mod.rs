@@ -24,15 +24,22 @@ fn read_code() -> String {
 
 //The driver that puts everything together
 pub fn driver() {
-    //Gets input(s)
-    let result = input::analyse();
+    //Looping the prompt
+    loop {
+        //Gets input(s)
+        let result = input::analyse();
 
-    //Loops through the list given by the struct
-    for count in result.start()..result.end() + 1 {
-        //Clone as i32
-        let input = count.clone() as i32;
+        if result.exit == "Yes".to_string() {
+            return;
+        }
 
-        //Do the Fizzing, Buzzing, and Barking
-        analyse(input);
+        //Loops through the list given by the struct
+        for count in result.start()..result.end() + 1 {
+            //Clone as i32
+            let input = count.clone() as i32;
+
+            //Do the Fizzing, Buzzing, and Barking
+            analyse(input);
+        }
     }
 }

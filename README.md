@@ -21,6 +21,15 @@ $343 343
 Fizz Fizz Woof
 ```
 
+#####***Update**!!!!*
+
+This officially works now!
+
+```
+$ 233334
+Fizz Fizz Fizz Fizz Fizz
+```
+
 # Compilation`
 
 Just run
@@ -29,4 +38,4 @@ Just run
 # Notes:
 Still in progress. Expect to see something cooler soon!
 
-Written in... Rust!
+Written in... The Awesome [Rust](https://www.rust-lang.org)!

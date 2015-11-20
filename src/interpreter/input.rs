@@ -2,6 +2,7 @@
 pub struct Instructions {
     start:i32,
     end:i32,
+    pub exit:String,
 }
 
 //Implement functions (including access functions) for struct
@@ -10,6 +11,8 @@ impl Instructions {
         self.start = first;
         self.end = second;
     }
+
+    //Access functions
     pub fn start(&self) -> i32 {
         return self.start;
     }
@@ -42,11 +45,20 @@ fn read_code() -> String {
 
 //Analyses the input into a Instructions struct
 pub fn analyse() -> Instructions {
-
     //Read the code, and get rid rid of the '\n'
     let mut temp = read_code();
     let tempclone = temp.clone();
     temp.truncate(tempclone.len() - 1);
+
+    if temp == "exit".to_string() {
+        let output = Instructions {
+            start: 0,
+            end: 0,
+            exit: "Yes".to_string(),
+        };
+
+        return output;
+    }
 
     //Our new vector of numbers (supposedly)
     let input:Vec<&str> = temp.split(' ').collect();
@@ -55,20 +67,21 @@ pub fn analyse() -> Instructions {
     let mut output = Instructions {
         start: 0,
         end: 0,
+        exit: "No".to_string(),
     };
 
     //Conversion of &str -> i32
     //Returns 0 if incorrect input
     let start = input[0].to_string()
-                .parse::<i32>()
-                .unwrap_or(0);
+        .parse::<i32>()
+        .unwrap_or(0);
 
     let mut end = start;
 
     if input.len() > 1 {
         end = input[1].to_string()
-                    .parse::<i32>()
-                    .unwrap_or(0);
+        .parse::<i32>()
+        .unwrap_or(0);
     }
 
     //Safely set the variables
