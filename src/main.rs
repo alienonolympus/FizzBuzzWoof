@@ -1,3 +1,6 @@
+//Get rid of the warnings!
+#[allow(dead_code)]
+
 //Get the interpreter module
 mod interpreter;
 

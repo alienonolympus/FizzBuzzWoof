@@ -19,7 +19,6 @@ impl Instructions {
     }
 }
 
-#[allow(dead_code)]
 //Read the code from istream
 fn read_code() -> String {
     //Using what we need
@@ -63,9 +62,14 @@ pub fn analyse() -> Instructions {
     let start = input[0].to_string()
                 .parse::<i32>()
                 .unwrap_or(0);
-    let end = input[1].to_string()
-                .parse::<i32>()
-                .unwrap_or(0);
+
+    let mut end = start;
+
+    if input.len() > 1 {
+        end = input[1].to_string()
+                    .parse::<i32>()
+                    .unwrap_or(0);
+    }
 
     //Safely set the variables
     output.setvar(start, end);
