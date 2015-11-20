@@ -19,6 +19,7 @@ impl Instructions {
     }
 }
 
+#[allow(dead_code)]
 //Read the code from istream
 fn read_code() -> String {
     //Using what we need
