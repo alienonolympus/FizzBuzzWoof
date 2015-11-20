@@ -2,7 +2,7 @@
 pub struct Instructions {
     start:i32,
     end:i32,
-    pub exit:String,
+    pub extra:String,
 }
 
 //Implement functions (including access functions) for struct
@@ -50,11 +50,11 @@ pub fn analyse() -> Instructions {
     let tempclone = temp.clone();
     temp.truncate(tempclone.len() - 1);
 
-    if temp == "exit".to_string() {
+    if temp.to_lowercase() == "exit".to_string() {
         let output = Instructions {
             start: 0,
             end: 0,
-            exit: "Yes".to_string(),
+            extra: "Exit".to_string(),
         };
 
         return output;
@@ -67,7 +67,7 @@ pub fn analyse() -> Instructions {
     let mut output = Instructions {
         start: 0,
         end: 0,
-        exit: "No".to_string(),
+        extra: "None".to_string(),
     };
 
     //Conversion of &str -> i32

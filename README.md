@@ -32,9 +32,6 @@ $ exit
 Run:
 ```cargo run```
 
-Check these two buttons to see which versions work:
-[![Build Status](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof.svg)](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof) [![Build Status](https://dockunit.io/svg/Carbon-Labs/FizzBuzzWoof?master&1448022201550)](https://dockunit.io/projects/Carbon-Labs/FizzBuzzWoof)
-
 # Notes:
 Written in... The Awesome [Rust](https://www.rust-lang.org)!
 

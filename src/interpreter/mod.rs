@@ -29,7 +29,7 @@ pub fn driver() {
         //Gets input(s)
         let result = input::analyse();
 
-        if result.exit == "Yes".to_string() {
+        if result.extra == "Exit".to_string() {
             return;
         }
 
