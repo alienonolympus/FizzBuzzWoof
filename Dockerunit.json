@@ -1,0 +1,9 @@
+{
+	"containers": [
+		{
+			"prettyName": "Rust 1.4.x",
+			"image": "jimmycuadra/rust",
+			"testCommand": "cargo build"
+		}
+	]
+}
