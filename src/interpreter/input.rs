@@ -61,7 +61,7 @@ pub fn analyse() -> Instructions {
     //Returns 0 if incorrect input
     let start = input[0].to_string()
                 .parse::<i32>()
-                .unwrap_or(0)
+                .unwrap_or(0);
     let end = input[1].to_string()
                 .parse::<i32>()
                 .unwrap_or(0);
