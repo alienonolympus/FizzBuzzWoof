@@ -1,4 +1,4 @@
-# FizzBuzzWoof [![Build Status](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof.svg)](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof)
+# FizzBuzzWoof [![Build Status](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof.svg)](https://travis-ci.org/Carbon-Labs/FizzBuzzWoof) [![Build Status](https://dockunit.io/svg/Carbon-Labs/FizzBuzzWoof?master&1448022201550)](https://dockunit.io/projects/Carbon-Labs/FizzBuzzWoof)
 A Fizz Buzz Woof implementation in Rust
 
 Now, you can directly enter the a range of numbers you want to print out.
