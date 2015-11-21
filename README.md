@@ -6,7 +6,7 @@ You can directly enter the a range of numbers you want to print out.
 Example:
 
 ```
-$15 20
+$ 15 20
 Buzz Fizz Buzz
 16
 Woof
@@ -28,6 +28,14 @@ $ exit
 ```
 
 # Compilation
+
+### Prerequisites
+[Install Rust](https://www.rust-lang.org/downloads.html)
+
+
+Usually, when you install Rust, Cargo, the project manager, is installed, too. However, if it is not, just [Install Cargo Manually](https://crates.io/install). The only time when Cargo was not installed (at least for me) was when I used `pacman -S rust`.
+
+### Running (and Building)
 
 Run:
 ```cargo run```
