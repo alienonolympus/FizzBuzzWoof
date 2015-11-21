@@ -29,6 +29,7 @@ pub fn driver() {
         //Gets input(s)
         let result = input::analyse();
 
+        //If the user inserted "exit", break
         if result.extra == "Exit".to_string() {
             return;
         }

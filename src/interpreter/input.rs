@@ -50,6 +50,7 @@ pub fn analyse() -> Instructions {
     let tempclone = temp.clone();
     temp.truncate(tempclone.len() - 1);
 
+    //If input == exit, send Exit message
     if temp.to_lowercase() == "exit".to_string() {
         let output = Instructions {
             start: 0,
